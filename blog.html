@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journal — Essays by DropSignal It</title>
+  <meta name="description" content="Essays and field notes on learning, productivity, entrepreneurship and living with intention. New writing every week.">
+  <meta name="author" content="DropSignal It">
+  <meta name="theme-color" content="#0F172A">
+  <meta name="robots" content="index, follow">
+  <!-- Canonical & social URLs must be absolute: replace the domain before launch -->
+  <link rel="canonical" href="https://dropsignalit.com/blog.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DropSignal It">
+  <meta property="og:title" content="Journal — Essays by DropSignal It">
+  <meta property="og:description" content="Essays and field notes on learning, productivity, entrepreneurship and living with intention. New writing every week.">
+  <meta property="og:url" content="https://dropsignalit.com/blog.html">
+  <meta property="og:image" content="https://dropsignalit.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Journal — Essays by DropSignal It">
+  <meta name="twitter:description" content="Essays and field notes on learning, productivity, entrepreneurship and living with intention. New writing every week.">
+  <meta name="twitter:image" content="https://dropsignalit.com/assets/images/og-image.jpg">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Flag JS support early so reveal animations never flash -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= Site header ================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="DropSignal It — home">
+        <span class="brand__mark" aria-hidden="true">D<span>.</span></span>
+            <span class="brand__name">DropSignal <em>It</em></span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li class="nav__item has-mega">
+            <button class="nav__link nav__trigger" type="button" aria-expanded="false" aria-controls="mega-services">Services <svg class="nav__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="mega" id="mega-services">
+              <div class="container mega__grid" style="--cols:3">
+                <div class="mega__col">
+                  <p class="mega__heading">Search</p>
+                  <ul class="mega__list">
+                    <li><a class="mega__link" href="seo.html"><span class="mega__title">SEO</span><span class="mega__desc">Search Engine Optimisation</span></a></li>
+                    <li><a class="mega__link" href="geo.html"><span class="mega__title">GEO</span><span class="mega__desc">Generative Engine Optimisation</span></a></li>
+                    <li><a class="mega__link" href="ai-search.html"><span class="mega__title">AI Search</span><span class="mega__desc">AI Search Optimisation</span></a></li>
+                    <li><a class="mega__link" href="local-seo.html"><span class="mega__title">Local SEO</span><span class="mega__desc">Local SEO</span></a></li>
+                    <li><a class="mega__link" href="technical-seo.html"><span class="mega__title">Technical SEO</span><span class="mega__desc">Technical SEO Audits</span></a></li>
+                  </ul>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__heading">Paid Media</p>
+                  <ul class="mega__list">
+                    <li><a class="mega__link" href="google-ads.html"><span class="mega__title">Google Ads</span><span class="mega__desc">Google Ads</span></a></li>
+                    <li><a class="mega__link" href="meta-ads.html"><span class="mega__title">Meta Ads</span><span class="mega__desc">Meta Ads</span></a></li>
+                    <li><a class="mega__link" href="linkedin-ads.html"><span class="mega__title">LinkedIn Ads</span><span class="mega__desc">LinkedIn Ads</span></a></li>
+                    <li><a class="mega__link" href="tiktok-ads.html"><span class="mega__title">TikTok Ads</span><span class="mega__desc">TikTok Ads</span></a></li>
+                    <li><a class="mega__link" href="youtube-ads.html"><span class="mega__title">YouTube Ads</span><span class="mega__desc">YouTube Ads</span></a></li>
+                  </ul>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__heading">Growth &amp; Build</p>
+                  <ul class="mega__list">
+                    <li><a class="mega__link" href="email-marketing.html"><span class="mega__title">Email Marketing</span><span class="mega__desc">Email Marketing</span></a></li>
+                    <li><a class="mega__link" href="automation.html"><span class="mega__title">Automation</span><span class="mega__desc">Marketing Automation</span></a></li>
+                    <li><a class="mega__link" href="web-dev.html"><span class="mega__title">Web Dev</span><span class="mega__desc">Web Development</span></a></li>
+                    <li><a class="mega__link" href="landing-pages.html"><span class="mega__title">Landing Pages</span><span class="mega__desc">Landing Page Design</span></a></li>
+                    <li><a class="mega__link" href="youtube.html"><span class="mega__title">YouTube</span><span class="mega__desc">YouTube Channel Management</span></a></li>
+                  </ul>
+                </div>
+                <aside class="mega__card" aria-label="Free marketing audit">
+                  <p class="mega__eyebrow">Free audit</p>
+                  <p class="mega__card-title">Not sure where to start? <em>Get a free marketing audit.</em></p>
+                  <a class="mega__card-link" href="contact.html">Book your free audit <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+                </aside>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--sm" href="contact.html">Get a Free Marketing Audit <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <ul class="mobile-menu__links">
+        <li class="mm-item"><button class="mm-trigger" type="button" aria-expanded="false" aria-controls="mm-services">Services <span class="mm-meta"><small>01</small><svg class="nav__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span></button><div class="mm-sub" id="mm-services"><div><p class="mm-sub__title">Search</p><ul><li><a href="seo.html">SEO</a></li><li><a href="geo.html">GEO</a></li><li><a href="ai-search.html">AI Search</a></li><li><a href="local-seo.html">Local SEO</a></li><li><a href="technical-seo.html">Technical SEO</a></li></ul><p class="mm-sub__title">Paid Media</p><ul><li><a href="google-ads.html">Google Ads</a></li><li><a href="meta-ads.html">Meta Ads</a></li><li><a href="linkedin-ads.html">LinkedIn Ads</a></li><li><a href="tiktok-ads.html">TikTok Ads</a></li><li><a href="youtube-ads.html">YouTube Ads</a></li></ul><p class="mm-sub__title">Growth &amp; Build</p><ul><li><a href="email-marketing.html">Email Marketing</a></li><li><a href="automation.html">Automation</a></li><li><a href="web-dev.html">Web Dev</a></li><li><a href="landing-pages.html">Landing Pages</a></li><li><a href="youtube.html">YouTube</a></li></ul></div></div></li>
+        <li><a href="about.html">About <small>02</small></a></li>
+        <li><a href="contact.html">Contact <small>03</small></a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <a class="btn btn--accent btn--block" href="contact.html">Get a Free Marketing Audit <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+      <p>hello@dropsignalit.com</p>
+      <ul class="socials" aria-label="Social media">
+        <li><a class="icon-btn icon-btn--light" href="#" aria-label="X (Twitter)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16"/><path d="M20 4 4 20"/></svg></a></li>
+        <li><a class="icon-btn icon-btn--light" href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7"/><path d="M8 7v.01"/><path d="M12 17v-4a2 2 0 0 1 4 0v4"/><path d="M12 10v7"/></svg></a></li>
+        <li><a class="icon-btn icon-btn--light" href="#" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg></a></li>
+        <li><a class="icon-btn icon-btn--light" href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ================= Page hero ================= -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <div class="page-hero__inner">
+          <ol class="breadcrumb" aria-label="Breadcrumb" data-animate>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Journal</li>
+          </ol>
+          <h1 id="page-title" class="split-reveal">The Journal: notes on <em>learning, work</em> &amp; life.</h1>
+          <p class="lead" data-animate style="--delay:.3s">Long-form essays, practical guides and honest field notes. 300+ articles, published every Sunday since 2018.</p>
+        </div>
+      </div>
+      <span class="page-hero__index" aria-hidden="true">Journal</span>
+    </section>
+
+    <!-- ================= Featured article ================= -->
+    <section class="section" style="padding-top:0" aria-label="Featured article">
+      <div class="container">
+        <article class="featured-post" data-animate>
+          <div class="featured-post__media">
+            <img src="assets/images/blog-featured.jpg" alt="A winding path leading toward a distant horizon" width="1200" height="800" loading="lazy">
+          </div>
+          <div class="featured-post__body">
+            <div class="meta"><span class="tag tag--navy">Featured essay</span><span>Sep 21, 2026</span><span class="dot"></span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 11 min read</span></div>
+            <h2><a href="#">The Long Way Is Usually the <em>Short Way</em></a></h2>
+            <p class="lead">Why the slow, deliberate path to mastery beats every shortcut, and how to stay patient when everyone around you seems to be sprinting ahead.</p>
+            <div class="testimonial__author">
+              <img src="assets/images/profile.jpg" alt="" width="48" height="48" loading="lazy">
+              <div><span class="testimonial__name">DropSignal It</span><span class="testimonial__role">Editorial team</span></div>
+            </div>
+            <p><a class="link-arrow" href="#">Read the essay <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= Articles + sidebar ================= -->
+    <section class="section section--alt" aria-labelledby="latest-title">
+      <div class="container blog-layout">
+        <div>
+          <div class="section-title" style="margin-bottom:1.5rem">
+            <h2 id="latest-title" class="split-reveal">Latest <em>articles</em></h2>
+          </div>
+          <ul class="filters" data-filters="post-grid" aria-label="Filter articles by category">
+            <li><button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button></li>
+            <li><button class="filter-btn" type="button" data-filter="learning" aria-pressed="false">Learning</button></li>
+            <li><button class="filter-btn" type="button" data-filter="productivity" aria-pressed="false">Productivity</button></li>
+            <li><button class="filter-btn" type="button" data-filter="business" aria-pressed="false">Business</button></li>
+            <li><button class="filter-btn" type="button" data-filter="career" aria-pressed="false">Career</button></li>
+            <li><button class="filter-btn" type="button" data-filter="reading" aria-pressed="false">Reading</button></li>
+          </ul>
+          <p class="sr-only" data-filter-status role="status" aria-live="polite"></p>
+
+          <div class="grid grid--2" id="post-grid" data-stagger>
+            <article class="card blog-card" data-animate data-filter-item="productivity">
+              <div class="card__media">
+                <span class="tag tag--light">Productivity</span>
+                <img src="assets/images/blog-1.jpg" alt="" width="1200" height="800" loading="lazy">
+              </div>
+              <div class="card__body">
+                <div class="meta"><span><time datetime="2026">Sep 14, 2026</time></span><span class="dot"></span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 6 min read</span></div>
+                <h3 class="card__title"><a href="#">A Weekly Review That Takes 20 Minutes</a></h3>
+                <p class="card__text">The simple Sunday ritual that keeps our projects, priorities and inbox from quietly drifting off course.</p>
+              </div>
+            </article>
+            <article class="card blog-card" data-animate data-filter-item="business">
+              <div class="card__media">
+                <span class="tag tag--light">Business</span>
+                <img src="assets/images/blog-2.jpg" alt="" width="1200" height="800" loading="lazy">
+              </div>
+              <div class="card__body">
+                <div class="meta"><span><time datetime="2026">Sep 07, 2026</time></span><span class="dot"></span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 9 min read</span></div>
+                <h3 class="card__title"><a href="#">What We Learned From Our First $1M Year</a></h3>
+                <p class="card__text">Revenue, mistakes, hiring and the surprising things that didn't matter at all. An honest breakdown.</p>
+              </div>
+            </article>
+            <article class="card blog-card" data-animate data-filter-item="learning">
+              <div class="card__media">
+                <span class="tag tag--light">Learning</span>
+                <img src="assets/images/blog-4.jpg" alt="" width="1200" height="800" loading="lazy">
+              </div>
+              <div class="card__body">
+                <div class="meta"><span><time datetime="2026">Aug 31, 2026</time></span><span class="dot"></span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 7 min read</span></div>
+                <h3 class="card__title"><a href="#">The Feynman Loop: Learn Anything in 4 Steps</a></h3>
+                <p class="card__text">A practical walkthrough of the technique we use to learn hard subjects, with a template you can steal.</p>
+              </div>
+            </article>
+            <article class="card blog-card" data-animate data-filter-item="reading">
+              <div class="card__media">
+                <span class="tag tag--light">Reading</span>
+                <img src="assets/images/blog-3.jpg" alt="" width="1200" height="800" loading="lazy">
+              </div>
+              <div class="card__body">
+                <div class="meta"><span><time datetime="2026">Aug 24, 2026</time></span><span class="dot"></span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 12 min read</span></div>
+                <h3 class="card__title"><a href="#">The 12 Books That Rewired How We Think</a></h3>
+                <p class="card__text">Not a list of bestsellers. These are the books we keep returning to, and exactly why each one matters.</p>
+              </div>
+            </article>
+            <article class="card blog-card" data-animate data-filter-item="career">
+              <div class="card__media">
+                <span class="tag tag--light">Speaking</span>
+                <img src="assets/images/blog-5.jpg" alt="" width="1200" height="800" loading="lazy">
+              </div>
+              <div class="card__body">
+                <div class="meta"><span><time datetime="2026">Aug 17, 2026</time></span><span class="dot"></span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 8 min read</span></div>
+                <h3 class="card__title"><a href="#">How to Give a Talk Nobody Forgets</a></h3>
+                <p class="card__text">Three structures, one opening line and the rehearsal method that finally cures stage fright.</p>
+              </div>
+            </article>
+            <article class="card blog-card" data-animate data-filter-item="career">
+              <div class="card__media">
+                <span class="tag tag--light">Career</span>
+                <img src="assets/images/blog-6.jpg" alt="" width="1200" height="800" loading="lazy">
+              </div>
+              <div class="card__body">
+                <div class="meta"><span><time datetime="2026">Aug 10, 2026</time></span><span class="dot"></span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 10 min read</span></div>
+                <h3 class="card__title"><a href="#">Build a Career Like a Portfolio</a></h3>
+                <p class="card__text">Why the smartest careers look less like ladders and more like a well-balanced set of small bets.</p>
+              </div>
+            </article>
+          </div>
+
+          <nav aria-label="Article pages">
+            <ul class="pagination">
+              <li><a class="pagination__nav pagination__nav--prev" href="#" aria-disabled="true" aria-label="Previous page"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg><span>Prev</span></a></li>
+              <li><a href="#" aria-current="page" aria-label="Page 1">1</a></li>
+              <li><a href="#" aria-label="Page 2">2</a></li>
+              <li class="pagination__hide-sm"><a href="#" aria-label="Page 3">3</a></li>
+              <li><span aria-hidden="true">…</span></li>
+              <li><a href="#" aria-label="Page 24">24</a></li>
+              <li><a class="pagination__nav" href="#" aria-label="Next page"><span>Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <aside class="sidebar" aria-label="Journal sidebar">
+          <section class="sidebar__block" aria-labelledby="cats-title">
+            <h2 id="cats-title">Categories</h2>
+            <ul class="sidebar__list">
+              <li><a href="#">Learning <span>84</span></a></li>
+              <li><a href="#">Productivity <span>61</span></a></li>
+              <li><a href="#">Business <span>57</span></a></li>
+              <li><a href="#">Career <span>43</span></a></li>
+              <li><a href="#">Reading <span>29</span></a></li>
+              <li><a href="#">Life <span>38</span></a></li>
+            </ul>
+          </section>
+          <section class="sidebar__block" aria-labelledby="popular-title">
+            <h2 id="popular-title">Most read</h2>
+            <ol class="sidebar__list">
+              <li><a href="#">How We Plan a Year on One Page</a></li>
+              <li><a href="#">The Beginner's Mind, Revisited</a></li>
+              <li><a href="#">Rules for Writing Every Day</a></li>
+              <li><a href="#">Stop Collecting, Start Creating</a></li>
+            </ol>
+          </section>
+          <section class="sidebar__block sidebar__block--dark" aria-labelledby="side-news-title">
+            <h2 id="side-news-title">The Sunday Letter</h2>
+            <p>One thoughtful idea, every Sunday. Join 120,000 readers.</p>
+            <form class="subscribe" data-subscribe novalidate>
+              <label class="sr-only" for="sidebar-email">Email address</label>
+              <input id="sidebar-email" type="email" name="email" placeholder="Your email" autocomplete="email" required>
+              <button class="btn btn--accent btn--sm" type="submit">Join</button>
+            </form>
+            <p class="subscribe__msg" role="status" aria-live="polite"></p>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Site footer ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="index.html" aria-label="DropSignal It — home">
+            <span class="brand__mark" aria-hidden="true">D<span>.</span></span>
+            <span class="brand__name">DropSignal <em>It</em></span>
+          </a>
+          <p>An independent learning studio. Books, courses and essays on learning deeply, building meaningful work and growing with intention.</p>
+          <ul class="socials" aria-label="Social media">
+            <li><a class="icon-btn icon-btn--light" href="#" aria-label="X (Twitter)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16"/><path d="M20 4 4 20"/></svg></a></li>
+            <li><a class="icon-btn icon-btn--light" href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7"/><path d="M8 7v.01"/><path d="M12 17v-4a2 2 0 0 1 4 0v4"/><path d="M12 10v7"/></svg></a></li>
+            <li><a class="icon-btn icon-btn--light" href="#" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg></a></li>
+            <li><a class="icon-btn icon-btn--light" href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg></a></li>
+          </ul>
+        </div>
+
+        <nav class="footer__col footer__col--services" aria-labelledby="footer-services">
+          <h2 id="footer-services">Services</h2>
+          <ul>
+            <li><a href="seo.html">SEO</a></li>
+            <li><a href="geo.html">GEO</a></li>
+            <li><a href="ai-search.html">AI Search</a></li>
+            <li><a href="local-seo.html">Local SEO</a></li>
+            <li><a href="technical-seo.html">Technical SEO</a></li>
+            <li><a href="google-ads.html">Google Ads</a></li>
+            <li><a href="meta-ads.html">Meta Ads</a></li>
+            <li><a href="linkedin-ads.html">LinkedIn Ads</a></li>
+            <li><a href="tiktok-ads.html">TikTok Ads</a></li>
+            <li><a href="youtube-ads.html">YouTube Ads</a></li>
+            <li><a href="email-marketing.html">Email Marketing</a></li>
+            <li><a href="automation.html">Automation</a></li>
+            <li><a href="web-dev.html">Web Dev</a></li>
+            <li><a href="landing-pages.html">Landing Pages</a></li>
+            <li><a href="youtube.html">YouTube</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h2>Company</h2>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mailto:hello@dropsignalit.com">hello@dropsignalit.com</a></li>
+            <li><span>Dhaka · Remote worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__wordmark" aria-hidden="true">DropSignal <em>It</em></p>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> DropSignal It. All rights reserved.</p>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp chat button: replace 8801707430464 with your WhatsApp number (country code, no + or spaces) -->
+  <a class="whatsapp-float" href="https://wa.me/8801707430464?text=Hi%20DropSignal%20It%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="whatsapp-float__label">Chat with us</span>
+  </a>
+
+  <button class="back-to-top" type="button" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/animations.js" defer></script>
+</body>
+</html>

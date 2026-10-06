@@ -8,14 +8,12 @@
    -------------------------------------------------------------------------- */
 @media (min-width: 1440px) {
   :root { --container: 1300px; }
-  .hero__visual { max-width: 540px; }
 }
 
 /* --------------------------------------------------------------------------
    Laptop (≤ 1280px)
    -------------------------------------------------------------------------- */
 @media (max-width: 1280px) {
-  .hero__badge { left: -1.25rem; }
   .course-row__preview { display: none; }
   .footer__top { grid-template-columns: 1.2fr 2fr 1fr; }
 }
@@ -36,13 +34,6 @@
   .grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .book-shelf { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 
-  .hero::after { width: 40%; }
-  .hero__grid { grid-template-columns: 1fr 0.85fr; }
-
-  .intro__pillars { grid-template-columns: 1fr; }
-  .pillar { display: grid; grid-template-columns: 40px 1fr; column-gap: 1rem; }
-  .pillar h3, .pillar p { grid-column: 2; }
-  .pillar__num { grid-row: span 2; }
 
   .stats { grid-template-columns: repeat(2, 1fr); }
   .stat:nth-child(3) { padding-left: 0; border-left: 0; }
@@ -80,17 +71,7 @@
   .grid--3 { grid-template-columns: 1fr; }
   .grid--3.grid--keep-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-  /* Hero stacks with portrait first */
-  .hero::after { width: 100%; height: 44%; top: auto; bottom: 0; }
-  .hero__grid { grid-template-columns: 1fr; }
-  .hero__visual { justify-self: center; max-width: 420px; }
-  .hero__badge { left: -0.75rem; }
-  .hero__ring, .hero__ring-center { inset: -14px -10px auto auto; width: 100px; height: 100px; }
-
-  .intro__grid { grid-template-columns: 1fr; }
-  .intro__media { max-width: 460px; }
-  .intro__signature { right: 0.75rem; }
-  .intro__media::before { inset: 1rem -0.75rem -0.75rem 1rem; }
+  .agency { grid-template-columns: 1fr; }
 
   .achievements__head { grid-template-columns: 1fr; }
 
@@ -137,9 +118,6 @@
 
   .btn { padding: 0.9rem 1.3rem; }
   .hero__actions .btn { flex: 1 1 100%; }
-  .hero__badge { padding: 0.75rem 1rem; bottom: 8%; }
-  .hero__badge strong { font-size: 1.1rem; }
-  .hero__proof { flex-direction: column; align-items: flex-start; }
 
   .grid--4,
   .grid--3.grid--keep-2 { grid-template-columns: 1fr; }
@@ -203,9 +181,9 @@
   }
   .js [data-animate],
   .js .split-reveal .word > span { opacity: 1; transform: none; }
+  .orb { animation: none; }
   .marquee__track { animation: none; flex-wrap: wrap; justify-content: center; width: auto; }
   .marquee__track [aria-hidden="true"] { display: none; }
-  .hero__frame img { transform: none !important; }
 }
 
 /* --------------------------------------------------------------------------

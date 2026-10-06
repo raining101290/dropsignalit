@@ -249,6 +249,7 @@
   padding: 2rem 0;
   border-top: 1px solid var(--line-strong);
   position: relative;
+  isolation: isolate;
   transition: padding 0.5s var(--ease);
 }
 .course-row:last-child { border-bottom: 1px solid var(--line-strong); }
@@ -282,7 +283,38 @@
   z-index: 3;
 }
 .course-row__preview img { width: 100%; height: 100%; object-fit: cover; }
+.course-row::before {
+  content: "";
+  position: absolute;
+  inset: 0 -1rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: scaleX(0.96) translateY(6px);
+  transform-origin: left center;
+  transition: opacity 0.4s var(--ease), transform 0.6s var(--ease);
+  z-index: -1;
+}
+.course-row::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: -1px;
+  height: 2px;
+  background: var(--emerald);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.7s var(--ease);
+}
+.course-row__num { display: inline-block; transition: transform 0.5s var(--ease), color 0.4s; }
+.course-row h3 a { display: inline-block; transition: transform 0.5s var(--ease), color 0.4s; }
+.course-row p { transition: color 0.4s, transform 0.5s var(--ease); }
 .course-row:hover { padding-inline: 1rem; }
+.course-row:hover::before { opacity: 1; transform: none; }
+.course-row:hover::after { transform: scaleX(1); }
+.course-row:hover .course-row__num { transform: scale(1.25) translateX(4px); }
+.course-row:hover h3 a { transform: translateX(8px); color: var(--emerald-600); }
+.course-row:hover p { color: var(--ink); transform: translateX(4px); }
 .course-row:hover .course-row__arrow { background: var(--emerald); color: var(--white); border-color: var(--emerald); transform: rotate(-45deg); }
 .course-row:hover .course-row__preview { opacity: 1; transform: translateY(-50%) rotate(-4deg) scale(1); }
 
@@ -687,8 +719,6 @@
    -------------------------------------------------------------------------- */
 .testimonial > svg { width: 34px; height: 34px; color: var(--emerald); }
 .grid > .testimonial { margin-bottom: 0; }
-.hero__badge-icon svg { width: 22px; height: 22px; }
-.hero__ring-center svg { width: 20px; height: 20px; }
 .course-card__stat dt { order: 2; }
 .course-card__stat dd { margin: 0; }
 .accordion__item > h3 { font-size: inherit; }

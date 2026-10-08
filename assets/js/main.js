@@ -346,3 +346,22 @@
      ------------------------------------------------------------------ */
   $$("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 })();
+
+
+/* Hero rotating word */
+(function () {
+  "use strict";
+  var box = document.querySelector("[data-rotator]");
+  if (!box || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var words = box.dataset.words.split("|");
+  var word = box.querySelector(".hero__word");
+  var i = 0;
+  setInterval(function () {
+    word.classList.add("is-out");
+    setTimeout(function () {
+      i = (i + 1) % words.length;
+      word.textContent = words[i];
+      word.classList.remove("is-out");
+    }, 300);
+  }, 2000);
+})();

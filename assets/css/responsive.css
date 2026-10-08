@@ -182,6 +182,7 @@
   .js [data-animate],
   .js .split-reveal .word > span { opacity: 1; transform: none; }
   .orb { animation: none; }
+  .hero__word, .hero__word.is-out { animation: none; }
   .marquee__track { animation: none; flex-wrap: wrap; justify-content: center; width: auto; }
   .marquee__track [aria-hidden="true"] { display: none; }
 }

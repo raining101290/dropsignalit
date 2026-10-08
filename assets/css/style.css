@@ -475,8 +475,21 @@ p { text-wrap: pretty; }
   color: var(--navy-700);
 }
 .hero__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--emerald); }
-.hero__title { font-size: clamp(2.75rem, 1.4rem + 5.4vw, 6rem); line-height: 1.04; letter-spacing: -0.02em; }
-.hero__title em { color: var(--emerald-600); }
+.hero__title { font-size: clamp(2.75rem, 1.4rem + 5.4vw, 5rem); line-height: 1.04; letter-spacing: -0.02em; }
+.hero__rotator {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 1.2em;
+  margin-top: 0.05em;
+  color: var(--emerald-600);
+  font-style: italic;
+  white-space: nowrap;
+}
+.hero__word { display: block; animation: word-in 0.45s var(--ease) both; }
+.hero__word.is-out { animation: word-out 0.3s ease-in both; }
+@keyframes word-in { from { opacity: 0; transform: translateY(70%); } to { opacity: 1; transform: none; } }
+@keyframes word-out { to { opacity: 0; transform: translateY(-70%); } }
 .hero__lead { font-size: var(--fs-lg); color: var(--muted); max-width: 42rem; }
 .hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.9rem; }
 .hero__actions .btn svg { width: 18px; height: 18px; }
